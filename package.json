@@ -2,7 +2,6 @@
   "name": "vietwis-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
@@ -21,7 +20,7 @@
     "slugify": "^1.4.6"
   },
   "engines": {
-    "node": "13.1.0",
-    "npm": "6.12.1"
+    "node": "13.12.0",
+    "npm": "6.14.4"
   }
 }

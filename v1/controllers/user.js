@@ -1,6 +1,4 @@
 
-const { urlencoded } = require('express');
-const { updateOne } = require('../models/user');
 const userModel = require('../models/user');
 const ErrorRespond = require('../utils/ErrorResponse');
 const sendSuccessResponse = require('../utils/sendSuccessResponse');
