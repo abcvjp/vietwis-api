@@ -7,11 +7,13 @@ const logger = require('morgan');
 
 const mongoose = require('mongoose');
 
+const cors = require('cors');
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
-
+app.use(cors());
 
 const apiV1Router = require('./v1/routes/routeAll.js');
 
