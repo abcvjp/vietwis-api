@@ -22,7 +22,7 @@ userSchema.pre('save', async function (next) {
 });
 
 userSchema.methods.getSignedToken = function() {
-    return jwt.sign({username: this.username, password: this.password, role: this.role}, process.env.accessTokenSecret, {expiresIn: 60*60}).toString();
+    return jwt.sign({username: this.username, password: this.password, role: this.role}, process.env.ACCESS_TOKEN_SECRET, {expiresIn: 60*60}).toString();
 };
 
 var User = mongoose.model('User',userSchema);
