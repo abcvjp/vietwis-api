@@ -1,4 +1,4 @@
-const ErrorRespond = require("../../../blog/api/utils/ErrorResponse");
+const ErrorRespond = require("../utils/ErrorResponse");
 const User = require('../models/user');
 const Post = require('../models/post');
 const sendSuccessResponse = require('../utils/sendSuccessResponse');
