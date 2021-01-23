@@ -1,4 +1,4 @@
-const ErrorRespond = require("../utils/ErrorResponse")
+const ErrorRespond = require("../utils/ErrorResponse");
 
 module.exports = (...roles) => async (req, res, next) => {
     if (!roles.includes(req.user.role)) {
